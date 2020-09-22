@@ -11,14 +11,11 @@ jobs:
       - run:
           name: Deploy Master to Heroku
           command: |
-            if [ -e /home/circleci/project/.git ]
-            then
-              cd /home/circleci/project
-              git push https://heroku:$HEROKU_API_KEY@git.heroku.com/$HEROKU_APP_NAME.git master
-            fi
+            cd /home/circleci/project
+            git push https://heroku:f5336682-b2f4-4673-a225-fdef1c2921f0@git.heroku.com/cvds-lab-6.git master
 
 workflows:
-  test_deploy:
+  build_test_deploy:
     jobs:
       - maven/test # checkout, build, test, and upload test results
       - deploy:
