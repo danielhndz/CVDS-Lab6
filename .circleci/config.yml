@@ -14,7 +14,7 @@ jobs:
             if [ -e /home/circleci/project/.git ]
             then
               cd /home/circleci/project
-              git push https://heroku:f5336682-b2f4-4673-a225-fdef1c2921f0@git.heroku.com/cvds-lab-6 master
+              git push https://heroku:$HEROKU_API_KEY@git.heroku.com/$HEROKU_APP_NAME.git master
             fi
 
 workflows:
