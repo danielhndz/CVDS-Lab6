@@ -5,6 +5,8 @@ orbs:
 
 jobs:
   deploy:
+    - image: circleci/openjdk:8-jdk-node
+  steps:
     run:
       name: Deploy Master to Heroku
       command: |
