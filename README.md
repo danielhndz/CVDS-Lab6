@@ -248,3 +248,4 @@ Esta parte del laboratorio se encuentra desarrollada en el package [WebAppJSF](/
 * WebAppJSF:
 
 ![](img/WebAppJSF.png)
+
