@@ -120,6 +120,7 @@
           <artifactId>maven-dependency-plugin</artifactId>
           <version>3.1.2</version>
           <executions>
+            <!--
             <execution>
               <phase>validate</phase>
               <goals>
@@ -137,6 +138,7 @@
                 </artifactItems>
               </configuration>
             </execution>
+            -->
             <execution>
               <phase>package</phase>
               <goals>
