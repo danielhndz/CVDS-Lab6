@@ -93,6 +93,7 @@
    Utilice ahora el parámetro `-v` y con el parámetro `-i`:
    
    `curl -v www.httpbin.org`
+   
    `curl -i www.httpbin.org`
    
    ¿Cuáles son las diferencias con los diferentes parámetros?
@@ -105,7 +106,7 @@
    
 ## II. Haciendo una aplicación Web dinámica a bajo nivel
 
-Esta parte del laboratorio se encuentra desarrollada en [SampleServlet](/SampleServlet).
+Esta parte del laboratorio se encuentra desarrollada en el package [SampleServlet](/src/main/java/SampleServlet).
 
 ![](img/SampleServlet-1.png)
 
@@ -113,7 +114,7 @@ Esta parte del laboratorio se encuentra desarrollada en [SampleServlet](/SampleS
 
 ## III. Preguntas
 
-Esta parte del laboratorio se encuentra desarrollada en [SampleServlet](/SampleServlet).
+Esta parte del laboratorio se encuentra desarrollada en el package [SampleServlet](/src/main/java/SampleServlet).
 
 * Recompile y ejecute la aplicación. Abra en su navegador en la página del formulario, y rectifique que la página 
 hecha anteriormente sea mostrada. Ingrese los datos y verifique los resultados. Cambie el formulario para que ahora en 
@@ -198,7 +199,38 @@ lugar de POST, use el método GET . Qué diferencia observa?
 
 ## IV. Frameworks Web MVC – Java Server Faces / Prime Faces
 
-Esta parte del laboratorio se encuentra desarrollada en [WebAppJSF](/WebAppJSF).
+Esta parte del laboratorio se encuentra desarrollada en el package [WebAppJSF](/src/main/java/WebAppJSF).
+
+* Anotación @ManagedBean
+
+  **@ManagedBean** marca un bean como un bean gestionado / administrado con el nombre especificado en el 
+  atributo `name`. Si no se especifica el atributo de nombre, entonces el nombre del bean administrado tomará por 
+  defecto la parte del nombre de clase del nombre de clase completo. En nuestro caso, sería `calculatorBean`.
+  
+  Otro atributo importante es el ansia (`eager`). Si `eager = "true"`, el bean administrado se crea antes de que se 
+  solicite por primera vez; de lo contrario, se utiliza una inicialización "perezosa" en la que el bean se creará solo 
+  cuando se solicite.
+  
+* Anotación de alcance (scope) 
+
+  | Anotación | Descripción |
+  | :---: | :---: |
+  | @RequestScoped | Bean vive mientras viva la solicitud-respuesta HTTP. Se crea a partir de una solicitud HTTP y se destruye cuando finaliza la respuesta HTTP asociada con la solicitud HTTP. |
+  | @NoneScoped | Bean vive tanto como una sola evaluación EL. Se crea en una evaluación EL y se destruye inmediatamente después de la evaluación EL. |
+  | @ViewScoped | Bean vive mientras el usuario esté interactuando con la misma vista JSF en la ventana / pestaña del navegador. Se crea a partir de una solicitud HTTP y se destruye una vez que el usuario devuelve la información a una vista diferente. |
+  | **@SessionScoped** | Bean vive mientras viva la sesión HTTP. Se crea en la primera solicitud HTTP que involucra este bean en la sesión y se destruye cuando la sesión HTTP se invalida. |
+  | **@ApplicationScoped** | Bean vive tanto como la aplicación web. Se crea en la primera solicitud HTTP que involucra este bean en la aplicación (o cuando la aplicación web se inicia y el atributo `eager = true` se establece en @ManagedBean) y se destruye cuando la aplicación web se apaga. |
+  | @CustomScoped | Bean vive mientras viva la entrada del bean en el mapa personalizado, que se crea para este ámbito. |
+  
+  Para el ejercicio de usar dos sesiones distintas de navegador y usar la aplicación en cada una:
+  
+  Con **@ApplicationScoped** todas las sesiones de navegador comparten la misma instancia del bean, es decir, comparten 
+  la misma calculadora, lo que puede generar conflictos indeseables, ya que solo una persona podría usar la aplicación 
+  al mismo tiempo de manera correcta.
+  
+  Con **@SessionScoped** todas las sesiones de navegador tienen su propia instancia del bean, es decir, manejan su 
+  propia calculadora, lo que permite que muchos usuarios puedan usar la aplicación al mismo tiempo sin generar 
+  conflictos entre ellos.
 
 ![](img/WebAppJSF-1.png)
 
@@ -215,4 +247,3 @@ Esta parte del laboratorio se encuentra desarrollada en [WebAppJSF](/WebAppJSF).
 * WebAppJSF:
 
 ![](img/WebAppJSF.png)
-
