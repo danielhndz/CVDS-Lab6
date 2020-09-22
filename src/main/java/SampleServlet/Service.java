@@ -1,6 +1,6 @@
-package WebAppJSF.SampleServlet;
+package SampleServlet;
 
-import WebAppJSF.model.Todo;
+import SampleServlet.model.Todo;
 import com.google.gson.Gson;
 
 import java.io.BufferedReader;

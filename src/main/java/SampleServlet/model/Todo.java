@@ -1,4 +1,4 @@
-package WebAppJSF.model;
+package SampleServlet.model;
 
 public class Todo {
 
