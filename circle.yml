@@ -8,3 +8,4 @@ deployment:
     branch: master
     heroku:
       appname: cvds-lab-6
+
