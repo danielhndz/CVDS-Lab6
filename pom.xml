@@ -9,7 +9,7 @@
   <version>1.0-SNAPSHOT</version>
   <packaging>war</packaging>
 
-  <name>WebAppJSF Maven Webapp</name>
+  <name>WebAppJSF</name>
   <url>https://cvds-lab-6.herokuapp.com/</url>
 
   <properties>
