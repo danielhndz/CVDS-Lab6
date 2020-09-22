@@ -17,8 +17,6 @@ workflows:
   maven_test:
     jobs:
       - maven/test # checkout, build, test, and upload test results
-  heroku_deploy:
-    jobs:
       - deploy:
           requires:
             - maven/test # only run deploy-via-git job if the maven/test job has completed
