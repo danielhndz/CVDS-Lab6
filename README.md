@@ -7,4 +7,6 @@
 
 1.  Abra una terminal Linux o consola de comandos Windows.
 
-2.  Realice una conexión síncrona TCP/IP a través de Telnet al siguiente servidor: 
+2.  Realice una conexión síncrona TCP/IP a través de Telnet al siguiente servidor:
+
+    * Ítem 1 
