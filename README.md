@@ -7,6 +7,4 @@
 
 1.  Abra una terminal Linux o consola de comandos Windows.
 
-2.  Realice una conexión síncrona TCP/IP a través de Telnet al siguiente servidor:
-
-     * Host: www.escuelaing.edu.co 
+2.  Realice una conexión síncrona TCP/IP a través de Telnet al siguiente servidor: 
