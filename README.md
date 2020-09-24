@@ -9,4 +9,4 @@
 
 2.  Realice una conexión síncrona TCP/IP a través de Telnet al siguiente servidor:
 
-    * Ítem 1 
+      * Ítem 1 
