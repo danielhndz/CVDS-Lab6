@@ -24,7 +24,7 @@
    
      ![](img/I-3.png)
      
-      **301 Moved Permanently**: Esta y todas las solicitudes futuras deben dirigirse al URI dado.
+       **301 Moved Permanently**: Esta y todas las solicitudes futuras deben dirigirse al URI dado.
    
    * ¿Qué otros códigos de error existen?, ¿En qué caso se manejarán?
      
