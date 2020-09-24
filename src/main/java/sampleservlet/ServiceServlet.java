@@ -24,23 +24,25 @@ public class ServiceServlet extends HttpServlet {
         resp.setContentType("text/html");
         try {
             int id = Integer.parseInt(req.getParameter("id"));
-            Optional<Todo> optionalTodo = Optional.ofNullable(ServiceTodo.getTodo(id));
+            Optional<Todo> optionalTodo = Optional.ofNullable(SampleService.getTodo(id));
 
             if (optionalTodo.isPresent()) {
                 Todo todo = optionalTodo.get();
                 List<Todo> todoList = Collections.singletonList(todo);
                 resp.setStatus(HttpServletResponse.SC_OK);
-                responseWriter.write(ServiceTodo.todosToHTMLTable(todoList));
+                responseWriter.write(SampleService.todosToHTMLTable(todoList));
                 responseWriter.flush();
             } else {
                 resp.setStatus(HttpServletResponse.SC_NOT_FOUND);
-                responseWriter.write(ServiceTodo.notFoundHTML());
+                responseWriter.write(SampleService.notFoundHTML());
             }
         } catch (NumberFormatException e) {
             resp.setStatus(HttpServletResponse.SC_BAD_REQUEST);
             final String HTML =
                     "<div align=\"center\">" +
                             "<br/><br/><br/><br/>" +
+                            "<h3>doGet</h3>" +
+                            "<br/>" +
                             "<h3>No se paso parámetro opcional, o el parámetro no contiene un número entero</h3>" +
                             "<br/>" +
                             "<button onclick=\"window.location.href='/';\">Go back</button>" +
@@ -51,6 +53,8 @@ public class ServiceServlet extends HttpServlet {
             final String HTML =
                     "<div align=\"center\">" +
                             "<br/><br/><br/><br/>" +
+                            "<h3>doGet</h3>" +
+                            "<br/>" +
                             "<h3>Error interno en el servidor</h3>" +
                             "<br/>" +
                             "<button onclick=\"window.location.href='/';\">Go back</button>" +
@@ -60,6 +64,8 @@ public class ServiceServlet extends HttpServlet {
             final String HTML =
                     "<div align=\"center\">" +
                             "<br/><br/><br/><br/>" +
+                            "<h3>doGet</h3>" +
+                            "<br/>" +
                             "<h3>Requerimiento inválido</h3>" +
                             "<br/>" +
                             "<button onclick=\"window.location.href='/';\">Go back</button>" +
@@ -74,23 +80,25 @@ public class ServiceServlet extends HttpServlet {
         resp.setContentType("text/html");
         try {
             int id = Integer.parseInt(req.getParameter("id"));
-            Optional<Todo> optionalTodo = Optional.ofNullable(ServiceTodo.getTodo(id));
+            Optional<Todo> optionalTodo = Optional.ofNullable(SampleService.getTodo(id));
 
             if (optionalTodo.isPresent()) {
                 Todo todo = optionalTodo.get();
                 List<Todo> todoList = Collections.singletonList(todo);
                 resp.setStatus(HttpServletResponse.SC_OK);
-                responseWriter.write(ServiceTodo.todosToHTMLTable(todoList));
+                responseWriter.write(SampleService.todosToHTMLTable(todoList));
                 responseWriter.flush();
             } else {
                 resp.setStatus(HttpServletResponse.SC_NOT_FOUND);
-                responseWriter.write(ServiceTodo.notFoundHTML());
+                responseWriter.write(SampleService.notFoundHTML());
             }
         } catch (NumberFormatException e) {
             resp.setStatus(HttpServletResponse.SC_BAD_REQUEST);
             final String HTML =
                     "<div align=\"center\">" +
                             "<br/><br/><br/><br/>" +
+                            "<h3>doPost</h3>" +
+                            "<br/>" +
                             "<h3>No se paso parámetro opcional, o el parámetro no contiene un número entero</h3>" +
                             "<br/>" +
                             "<button onclick=\"window.location.href='/';\">Go back</button>" +
@@ -101,6 +109,8 @@ public class ServiceServlet extends HttpServlet {
             final String HTML =
                     "<div align=\"center\">" +
                             "<br/><br/><br/><br/>" +
+                            "<h3>doPost</h3>" +
+                            "<br/>" +
                             "<h3>Error interno en el servidor</h3>" +
                             "<br/>" +
                             "<button onclick=\"window.location.href='/';\">Go back</button>" +
@@ -110,6 +120,8 @@ public class ServiceServlet extends HttpServlet {
             final String HTML =
                     "<div align=\"center\">" +
                             "<br/><br/><br/><br/>" +
+                            "<h3>doPost</h3>" +
+                            "<br/>" +
                             "<h3>Requerimiento inválido</h3>" +
                             "<br/>" +
                             "<button onclick=\"window.location.href='/';\">Go back</button>" +

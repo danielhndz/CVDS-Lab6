@@ -9,5 +9,4 @@
 
 2.  Realice una conexión síncrona TCP/IP a través de Telnet al siguiente servidor:
 
-      *  Host: www.escuelaing.edu.co
-      *  Puerto: 80 
+    *  Host: www.escuelaing.edu.co 
