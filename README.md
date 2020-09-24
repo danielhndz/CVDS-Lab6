@@ -32,25 +32,25 @@
      
         Hay 5 tipos de estado los de tipo 100 hasta los de tipo 500
      
-        *  Código de estado 100 (100 ... 103)
+       *  Código de estado 100 (100 ... 103)
        
             Son errores informáticos indicando que la petición se ha recibido y se continua el proceso.
        
-        *  Código de estado 200 (200 ... 208)
+       *  Código de estado 200 (200 ... 208)
        
             Estos códigos indican que todo ha salido correctamente.
        
-        *  Código de estado 300 (300 ... 308)
+       *  Código de estado 300 (300 ... 308)
        
             Están relacionados con re-direcciones. Los servidores usan estos códigos para indicar al navegador que la página 
             o recurso que han pedido se ha movido de sitio.
 
-        *  Código de estado 400 (400 ... 452)
+       *  Código de estado 400 (400 ... 452)
        
             Corresponden a errores de cliente, el más conocido es el **error 404** que aparece cuándo la página que se 
             intentó buscar no existe.
        
-        *  Código de estado 500 (500 ... 511)
+       *  Código de estado 500 (500 ... 511)
        
             Son errores por parte del servidor. Es posible que el servidor tenga algún problema temporal y no hay mucho que 
             se pueda hacer.
