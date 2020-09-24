@@ -1,6 +1,6 @@
-package SampleServlet;
+package sampleservlet;
 
-import SampleServlet.model.Todo;
+import sampleservlet.model.Todo;
 import com.google.gson.Gson;
 
 import java.io.BufferedReader;
@@ -10,7 +10,7 @@ import java.net.URL;
 import java.net.URLConnection;
 import java.util.List;
 
-public class Service {
+public class ServiceTodo {
 
     public static Todo getTodo(int id) throws IOException {
         URL url = new URL("https://jsonplaceholder.typicode.com/todos/" + id);

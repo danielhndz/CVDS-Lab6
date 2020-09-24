@@ -1,4 +1,4 @@
-package WebAppJSF.calculator;
+package webappjsf.calculator;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
@@ -13,7 +13,7 @@ import java.util.Map;
 @SessionScoped
 public class CalculatorBean implements Serializable {
 
-    static final long serialVersionUID = 33L;
+    private static final long serialVersionUID = 1L;
 
     private String inputField;
     private double mean;
@@ -24,22 +24,20 @@ public class CalculatorBean implements Serializable {
     private List<Double> doubleList;
     private List<String> record = new ArrayList<>();
 
-    public CalculatorBean() {}
-
     public void viewMean() {
-        if (inputIsValid(getInputField())) setMean(calculateMean());
+        if (inputIsValid()) setMean(calculateMean());
     }
 
     public void viewStandardDeviation() {
-        if (inputIsValid(getInputField())) setStandardDeviation(calculateStandardDeviation());
+        if (inputIsValid()) setStandardDeviation(calculateStandardDeviation());
     }
 
     public void viewVariance() {
-        if (inputIsValid(getInputField())) setVariance(calculateVariance());
+        if (inputIsValid()) setVariance(calculateVariance());
     }
 
     public void viewModes() {
-        if (inputIsValid(getInputField())) setModes(calculateModes().toString());
+        if (inputIsValid()) setModes(calculateModes().toString());
     }
 
     public double calculateMean() {
@@ -103,7 +101,7 @@ public class CalculatorBean implements Serializable {
         this.record.clear();
     }
 
-    private boolean inputIsValid(String input) {
+    private boolean inputIsValid() {
         try {
             setDoubleList(stringToDoubleList(getInputField()));
             if (!this.record.contains(getDoubleList().toString())) {

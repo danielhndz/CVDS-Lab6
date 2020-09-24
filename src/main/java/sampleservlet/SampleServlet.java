@@ -1,4 +1,4 @@
-package SampleServlet;
+package sampleservlet;
 
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -11,7 +11,7 @@ import java.util.Optional;
 @WebServlet(urlPatterns = "/helloServlet")
 public class SampleServlet extends HttpServlet {
 
-    static final long serialVersionUID = 35L;
+    private static final long serialVersionUID = 1L;
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {

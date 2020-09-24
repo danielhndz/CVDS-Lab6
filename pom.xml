@@ -9,7 +9,7 @@
   <version>1.0-SNAPSHOT</version>
   <packaging>war</packaging>
 
-  <name>WebAppJSF</name>
+  <name>webappjsf</name>
   <url>https://cvds-lab-6.herokuapp.com</url>
 
   <properties>
@@ -72,7 +72,7 @@
   </dependencies>
 
   <build>
-    <finalName>WebAppJSF</finalName>
+    <finalName>webappjsf</finalName>
     <!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
     <plugins>
       <plugin>
