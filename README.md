@@ -4,10 +4,10 @@
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/a30337d81eb44595abadf78247727385)](https://www.codacy.com/manual/danielhndz/CVDS-Lab6/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=danielhndz/CVDS-Lab6&amp;utm_campaign=Badge_Grade)
 
 # Escuela Colombiana de Ingeniería Julio Garavito
-# Ciclos de Vida del Desarrollo de Software (CVDS) - Grupo 1
+## Ciclos de Vida del Desarrollo de Software (CVDS) - Grupo 1
 
 :pushpin: **Daniel Felipe Hernández Mancipe**
-<br/>
+<br/><br/>
 
 # :hammer_and_wrench: Laboratorio 6 - Introducción CI
 
@@ -23,6 +23,8 @@ la página y como el usuario la percibe.
 
 Si no recuerda cómo hacerlo, puede revisar la información disponible en W3Schools para 
 [HTML](https://www.w3schools.com/html/) y [CSS](https://www.w3schools.com/css/).
+
+<br/><br/>
 
 # :hammer_and_wrench: Laboratorio 5 - MVC PrimeFaces Introduction
 
