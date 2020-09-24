@@ -135,7 +135,8 @@
                 <artifactItems>
                   <artifactItem>
                     <!-- https://mvnrepository.com/artifact/com.github.jsimone/webapp-runner -->
-                    <groupId>com.github.jsimone</groupId>
+                    <!-- https://github.com/heroku/webapp-runner -->
+                    <groupId>com.heroku</groupId>
                     <artifactId>webapp-runner</artifactId>
                     <version>9.0.27.1</version>
                     <destFileName>webapp-runner.jar</destFileName>
