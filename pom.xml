@@ -10,7 +10,7 @@
   <packaging>war</packaging>
 
   <name>WebAppJSF</name>
-  <url>https://cvds-lab-6.herokuapp.com/</url>
+  <url>https://cvds-lab-6.herokuapp.com</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -108,7 +108,9 @@
         <version>3.2.2</version>
         <configuration>
           <failOnMissingWebXml>false</failOnMissingWebXml>
+          <!--
           <warSourceDirectory>WebContent</warSourceDirectory>
+          -->
         </configuration>
       </plugin>
       <plugin>
