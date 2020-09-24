@@ -24,17 +24,17 @@ public class ServiceServlet extends HttpServlet {
         resp.setContentType("text/html");
         try {
             int id = Integer.parseInt(req.getParameter("id"));
-            Optional<Todo> optionalTodo = Optional.ofNullable(SampleService.getTodo(id));
+            Optional<Todo> optionalTodo = Optional.ofNullable(ServiceTodoUtil.getTodo(id));
 
             if (optionalTodo.isPresent()) {
                 Todo todo = optionalTodo.get();
                 List<Todo> todoList = Collections.singletonList(todo);
                 resp.setStatus(HttpServletResponse.SC_OK);
-                responseWriter.write(SampleService.todosToHTMLTable(todoList));
+                responseWriter.write(ServiceTodoUtil.todosToHTMLTable(todoList));
                 responseWriter.flush();
             } else {
                 resp.setStatus(HttpServletResponse.SC_NOT_FOUND);
-                responseWriter.write(SampleService.notFoundHTML());
+                responseWriter.write(ServiceTodoUtil.notFoundHTML());
             }
         } catch (NumberFormatException e) {
             resp.setStatus(HttpServletResponse.SC_BAD_REQUEST);
@@ -80,17 +80,17 @@ public class ServiceServlet extends HttpServlet {
         resp.setContentType("text/html");
         try {
             int id = Integer.parseInt(req.getParameter("id"));
-            Optional<Todo> optionalTodo = Optional.ofNullable(SampleService.getTodo(id));
+            Optional<Todo> optionalTodo = Optional.ofNullable(ServiceTodoUtil.getTodo(id));
 
             if (optionalTodo.isPresent()) {
                 Todo todo = optionalTodo.get();
                 List<Todo> todoList = Collections.singletonList(todo);
                 resp.setStatus(HttpServletResponse.SC_OK);
-                responseWriter.write(SampleService.todosToHTMLTable(todoList));
+                responseWriter.write(ServiceTodoUtil.todosToHTMLTable(todoList));
                 responseWriter.flush();
             } else {
                 resp.setStatus(HttpServletResponse.SC_NOT_FOUND);
-                responseWriter.write(SampleService.notFoundHTML());
+                responseWriter.write(ServiceTodoUtil.notFoundHTML());
             }
         } catch (NumberFormatException e) {
             resp.setStatus(HttpServletResponse.SC_BAD_REQUEST);

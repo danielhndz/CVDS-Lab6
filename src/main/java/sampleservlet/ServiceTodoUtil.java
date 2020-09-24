@@ -10,7 +10,7 @@ import java.net.URL;
 import java.net.URLConnection;
 import java.util.List;
 
-public class SampleService {
+public class ServiceTodoUtil {
 
     public static Todo getTodo(int id) throws IOException {
         URL url = new URL("https://jsonplaceholder.typicode.com/todos/" + id);
