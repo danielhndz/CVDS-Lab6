@@ -1,11 +1,32 @@
-# :hammer_and_wrench: Laboratorio 5 - MVC PrimeFaces Introduction
+[![Deployed to Heroku](https://www.herokucdn.com/deploy/button.png)](https://cvds-lab-6.herokuapp.com/)
+
+[![CircleCI](https://circleci.com/gh/danielhndz/CVDS-Lab6.svg?style=svg)](https://circleci.com/gh/danielhndz/CVDS-Lab6) 
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/a30337d81eb44595abadf78247727385)](https://www.codacy.com/manual/danielhndz/CVDS-Lab6/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=danielhndz/CVDS-Lab6&amp;utm_campaign=Badge_Grade)
+
+# Escuela Colombiana de Ingeniería Julio Garavito
+# Ciclos de Vida del Desarrollo de Software (CVDS) - Grupo 1
 
 :pushpin: **Daniel Felipe Hernández Mancipe**
 <br/>
 
+# :hammer_and_wrench: Laboratorio 6 - Introducción CI
+
+## I.  Integración continua
+Ingrese al repositorio de [WebApp-Heroku-CircleCI-CI](https://github.com/PDSW-ECI/WebApp-Heroku-CircleCI-CI) en GitHub 
+y resuelva el laboratorio allí especificado usando el proyecto creado en el Laboratorio 5 - MVC Primefaces Introduction.
+
+## II. Interfaz Gráfica
+
+Agregue mayor detalle a la interfaz gráfica de la página web para que se vea más amigable al usuario. Busque y agregue 
+estilos, colores de fondo, títulos, centrar la página, etc. cualquier elemento o detalle que pueda mejorar cómo se ve 
+la página y como el usuario la percibe.
+
+Si no recuerda cómo hacerlo, puede revisar la información disponible en W3Schools para 
+[HTML](https://www.w3schools.com/html/) y [CSS](https://www.w3schools.com/css/).
+
 # :hammer_and_wrench: Laboratorio 5 - MVC PrimeFaces Introduction
 
-## I. Jugando a ser un cliente HTTP
+## I.  Jugando a ser un cliente HTTP
 
 1.  Abra una terminal Linux o consola de comandos Windows.
 
@@ -112,7 +133,7 @@
    
 ## II.  Haciendo una aplicación Web dinámica a bajo nivel
 
-Esta parte del laboratorio se encuentra desarrollada en el package [SampleServlet](/src/main/java/SampleServlet).
+Esta parte del laboratorio se encuentra desarrollada en el package [SampleServlet](/src/main/java/sampleservlet).
 
 ![](img/SampleServlet-1.png)
 
@@ -120,7 +141,7 @@ Esta parte del laboratorio se encuentra desarrollada en el package [SampleServle
 
 ## III.  Preguntas
 
-Esta parte del laboratorio se encuentra desarrollada en el package [SampleServlet](/src/main/java/SampleServlet).
+Esta parte del laboratorio se encuentra desarrollada en el package [SampleServlet](/src/main/java/sampleservlet).
 
 *  Recompile y ejecute la aplicación. Abra en su navegador en la página del formulario, y rectifique que la página 
 hecha anteriormente sea mostrada. Ingrese los datos y verifique los resultados. Cambie el formulario para que ahora en 
@@ -205,7 +226,7 @@ lugar de POST, use el método GET . Qué diferencia observa?
 
 ## IV.  Frameworks Web MVC – Java Server Faces / Prime Faces
 
-Esta parte del laboratorio se encuentra desarrollada en el package [WebAppJSF](/src/main/java/WebAppJSF).
+Esta parte del laboratorio se encuentra desarrollada en el package [WebAppJSF](/src/main/java/webappjsf).
 
 * Anotación @ManagedBean
 
@@ -244,7 +265,7 @@ Esta parte del laboratorio se encuentra desarrollada en el package [WebAppJSF](/
 
 ![](img/WebAppJSF-3.png)
 
-##  Diagramas de Clases
+## Diagramas de Clases
 
 * SampleServlet:
 
